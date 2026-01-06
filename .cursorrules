@@ -1,0 +1,54 @@
+# Claude Skills Repository Rules
+
+This repository contains Claude Skills for sharing and collaboration.
+
+## Git Commit Message Convention
+
+**ALWAYS follow the commit message convention when making commits.**
+
+### Format
+```
+<type>(<skill-name>): <subject>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Type (Required)
+Must be one of:
+- **feat**: A new skill or feature addition
+- **fix**: A bug fix in an existing skill
+- **docs**: Documentation only changes
+- **refactor**: Code refactoring that neither fixes a bug nor adds a feature
+- **perf**: Performance improvements
+- **test**: Adding or updating tests
+- **chore**: Changes to build process, dependencies, or configuration files
+
+### Scope (Required)
+Must be the **skill name** (e.g., `calculator`, `weather`, `translator`). This identifies which skill the commit affects.
+
+### Subject (Required)
+- Use imperative, present tense: "add" not "added" nor "adds"
+- Don't capitalize the first letter
+- No period (.) at the end
+- Maximum 72 characters
+
+### Examples
+- `feat(calculator): add basic arithmetic operations`
+- `fix(weather): resolve API timeout issue`
+- `docs(translator): update usage examples`
+- `refactor(calculator): improve error handling logic`
+- `perf(weather): optimize API response caching`
+- `test(calculator): add unit tests for division`
+- `chore: update dependencies`
+
+### Rules
+1. Type is required and must be one of the specified types
+2. Scope is required and must be a valid skill name
+3. Subject is required and must be in imperative mood
+4. Body is optional but recommended for complex changes
+5. Footer is optional for breaking changes or issue references
+
+For detailed information, see [docs/COMMIT_CONVENTION.md](docs/COMMIT_CONVENTION.md).
+
